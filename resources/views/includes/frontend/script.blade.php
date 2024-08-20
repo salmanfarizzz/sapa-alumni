@@ -1,0 +1,13 @@
+<script src="{{url('frontend/assets/js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{url('frontend/assets/styles/bootstrap4/popper.js')}}"></script>
+<script src="{{url('frontend/assets/styles/bootstrap4/bootstrap.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/greensock/TweenMax.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/greensock/TimelineMax.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/scrollmagic/ScrollMagic.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/greensock/animation.gsap.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/greensock/ScrollToPlugin.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/scrollTo/jquery.scrollTo.min.js')}}"></script>
+<script src="{{url('frontend/assets/plugins/easing/easing.js')}}"></script>
+<script src="{{url('frontend/assets/js/custom.js')}}"></script>
+<script src="{{url('frontend/assets/js/home.js')}}"></script>

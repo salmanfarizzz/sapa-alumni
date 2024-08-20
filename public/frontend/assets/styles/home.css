@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Raleway;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.page-center {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+:root {
+  --primary: #518c51;
+  --secondary: #d9eadc;
+  --dark: #2a3c34;
+  --light: #fff;
+  --accent: #94eec3;
+  --text: #333;
+  --border: #dddddd;
+  --disabled: #d3d3d3;
+}
+
+.tag {
+  background-color: #ecffef;
+  color: var(--primary);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  width: fit-content;
+  margin: 0;
+}
+input,
+select {
+  width: -webkit-fill-available;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  margin-top: 0.75rem;
+}
+button {
+  cursor: pointer;
+  border-radius: 4rem;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  padding: 0.75rem 1.5rem;
+  width: fit-content;
+}
+
+button.primary,
+.primary {
+  background-color: var(--primary);
+  color: var(--light);
+  border: none;
+}
+
+button.primary:hover {
+  background-color: var(--dark);
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--light);
+  border: 1px solid var(--light);
+}
+
+button.secondary:hover {
+  background-color: var(--text);
+  color: var(--light);
+}
+
+button.tertiary {
+  background-color: var(--light);
+  color: var(--primary);
+  border: none;
+}
+
+button.tertiary:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+button.lg {
+  font-size: 1rem;
+}
+
+button.lg {
+  font-size: 0.875rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.with-border {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.btn-fixed-bottom {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  /* left: 0; */
+  /* right: 0; */
+  z-index: 99;
+}
+.cta-ghost {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 12px 24px;
+}
+
+.w-full {
+  width: 100%;
+}
+.radius-full {
+  border-radius: 4rem;
+}
+.m-0 {
+  margin: 0;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-28 {
+  margin-top: 28px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.d-grid {
+  display: grid;
+}
+.text-center {
+  text-align: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.gap-8 {
+  gap: 8px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-20 {
+  gap: 20px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-28 {
+  gap: 28px;
+}
+.gap-32 {
+  gap: 32px;
+}
+.gap-40 {
+  gap: 40px;
+}
+.gap-48 {
+  gap: 48px;
+}
+.gap-56 {
+  gap: 56px;
+}
+.hero span {
+  color: var(--accent);
+}
+.hero {
+  color: var(--light);
+}
+.informasi-dana {
+  gap: 24px;
+}
+.dana {
+  display: grid;
+  gap: 12px;
+}
+.dana p {
+  margin: 0;
+}
+form {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  gap: 1rem;
+  display: grid;
+}
+
+.navigation-menu a,
+.footer a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+}
+.navigation-menu a:hover,
+.footer a:hover {
+  color: var(--primary);
+}
+ul.navigation-menu,
+.footer ul {
+  padding: 0;
+}
+.navigation-menu li,
+.footer li {
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-menu {
+  display: flex;
+  gap: 32px;
+}
+.footer-top-item li {
+  margin: 1rem;
+}
+hr {
+  opacity: 0.4;
+}
+.footer-top {
+  padding-bottom: 72px;
+}
+.footer-bottom-content {
+  padding: 32px 0 80px;
+}
+@media (min-width: 1025px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .hero {
+    position: relative;
+    height: 500px;
+  }
+
+  .hero-left {
+    background-image: url('frontend/assets/images/ImagebackgroundHero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    z-index: 99;
+    padding: 88px;
+    width: 600px;
+  }
+
+  .footer-top-item {
+    min-width: 260px;
+  }
+  .hero-right img {
+    position: absolute;
+    margin-left: -2rem;
+    height: 500px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+  .credibility {
+    gap: 64px;
+  }
+  .help {
+    padding: 80px 0;
+  }
+  .help-content {
+    gap: 40px;
+  }
+  .help-right {
+    display: grid;
+    gap: 28px;
+  }
+  .informasi-dana {
+    margin-top: 40px;
+  }
+  .layanan {
+    padding: 80px 0;
+    color: var(--light);
+  }
+  .layanan-content {
+    display: grid;
+    gap: 56px;
+  }
+  .activity {
+    padding: 80px 0;
+  }
+  .group-activity {
+    gap: 2rem;
+  }
+  .amount {
+    font-size: 2rem;
+  }
+  .informasi-dana {
+    gap: 3rem;
+  }
+  form {
+    padding: 2rem;
+    width: 400px;
+  }
+  .form {
+    padding: 80px 0;
+  }
+  .form-content {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .logos {
+    justify-content: center;
+  }
+  .footer-bottom-content {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+  }
+  .nav-menu-item {
+    display: table-caption;
+    text-align: center;
+    min-width: 56px;
+  }
+  .navigation-menu-container {
+    width: 100%;
+  }
+  .footer-top-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  ul.navigation-menu {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light);
+    border-top: 1px solid var(--border);
+    z-index: 999;
+  }
+  .hero {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .hero-left {
+    background-image: url("assets/ImageBackgroundHeroMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 20px;
+    margin-top: -3rem;
+    position: relative;
+    z-index: 99;
+  }
+  .hero-right img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .credibility {
+    gap: 32px;
+  }
+  button {
+    width: 100%;
+  }
+  .help-left img {
+    width: 100%;
+    height: 100%;
+  }
+  .help-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .help {
+    padding: 64px 0;
+  }
+  .help-right {
+    display: grid;
+    gap: 20px;
+  }
+  .layanan {
+    padding: 64px 0;
+    color: var(--light);
+  }
+  .layanan-content {
+    display: grid;
+    gap: 32px;
+  }
+  .group-layanan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem !important;
+  }
+  .activity {
+    padding: 64px 0;
+  }
+  .group-activity {
+    gap: 1rem;
+  }
+  .group-activity {
+    overflow-x: scroll;
+  }
+  .amount {
+    font-size: 1.5rem;
+  }
+  .informasi-dana {
+    display: grid;
+  }
+  .form-right {
+    width: 100%;
+    display: flex;
+  }
+  .form {
+    padding: 40px 0;
+  }
+  form {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  .form-left {
+    display: none;
+  }
+}
+
+/* section bantu  */
+.group-bantu {
+  display: grid;
+  gap: 1rem;
+}
+
+.help-right span {
+  color: var(--primary);
+}
+
+.bantu-item {
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  align-items: center;
+  gap: 10px;
+}
+
+.bantu-item img {
+  width: 28px;
+  height: 28px;
+}
+
+/* layanan  */
+.layanan {
+  background-image: url("assets/ImageBackgroundLayanan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.link {
+  gap: 8px;
+  align-items: center;
+}
+.link a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bold;
+}
+.link img {
+  width: 20px;
+  height: 20px;
+}
+.layanan-item {
+  background-color: var(--light);
+  color: var(--text);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.group-layanan {
+  gap: 2rem;
+}
+
+/* activity */
+.activity {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.activity-content {
+  display: grid;
+  gap: 40px;
+}
+
+.activity-item {
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 12px;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.activity-item img {
+  border-radius: 12px;
+}
+.amount {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* progress bar  */
+.progress-bar {
+  background-color: #d3d3d3; /* Warna grey */
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inner-bar {
+  background-color: #008000; /* Warna green */
+  height: 100%;
+  width: 0; /* Lebar ini akan diubah menggunakan JavaScript */
+}
+.percentage-label {
+  color: var(--text);
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+.bar {
+  margin-top: 0.75rem;
+}
+
+/* tab  */
+.tab {
+  overflow-x: scroll;
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  min-width: 150px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.list {
+  background-color: var(--light);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+}
